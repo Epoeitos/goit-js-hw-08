@@ -1,0 +1,46 @@
+/* common */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+/* task */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-image {
+    box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+border-radius: 1%;
+}
+.gallery-image:hover {
+   box-shadow: 20px 4px 13px -11px rgba(133,133,133,0.63);
+-webkit-box-shadow: 20px 4px 13px -11px rgba(133,133,133,0.63);
+-moz-box-shadow: 20px 4px 13px -11px rgba(133,133,133,0.63);
+}
+
+.gallery-item {
+  flex-basis: calc(25% - (10px / 3));
+}
